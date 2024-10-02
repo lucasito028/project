@@ -1,0 +1,9 @@
+{
+    "Instalar o Venv": "python -m venv venv",
+    "Ativar o Venv": ".\venv\Scripts\activate",
+    "Upgradear o pip": "python.exe -m pip install --upgrade pip",
+    "Instalar o django": "pip install django",
+    "Instalar o Pillow": "pip install pillow",
+    "Instalar o Faker": "pip install fake",
+    "Rodar": "python manage.py runserver "
+}
