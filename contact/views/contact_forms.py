@@ -4,6 +4,7 @@ from contact.forms import ContactForm
 from contact.models import Contact
 
 def create(request):
+    
     form_action = reverse('contact:create')
 
     if request.method == 'POST':
@@ -34,8 +35,6 @@ def create(request):
         'contact/create.html',
         context
     )
-
-
 
 def update(request, contact_id):
     contact = get_object_or_404(

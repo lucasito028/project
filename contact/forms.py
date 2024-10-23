@@ -8,6 +8,9 @@ class ContactForm(forms.ModelForm):
         fields = (
             'first_name','last_name','phone',
         )
+        # Método clean é usada quando precisamos validar campos no formulários,
+        # este método é chamado antes de salvar os dados na base de dados
+
         def clean(self):
             cleaned_data = self.cleaned_data
             self.add_error(
